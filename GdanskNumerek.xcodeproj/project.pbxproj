@@ -1,0 +1,804 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D1997B71C960D1900CC9CAA /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1D1997B61C960D1900CC9CAA /* Settings.bundle */; };
+		1D218B431C84EA8A0026AB3C /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D218B421C84EA8A0026AB3C /* ApiClient.swift */; };
+		1D218B451C84F4E10026AB3C /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D218B441C84F4E10026AB3C /* UIColorExtension.swift */; };
+		1D218B471C84F53E0026AB3C /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D218B461C84F53E0026AB3C /* UIFontExtension.swift */; };
+		1D379D631C90D91C002C3E22 /* RefreshButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D379D621C90D91C002C3E22 /* RefreshButton.swift */; };
+		1D3E1D281C922843003CFB43 /* logo-color@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D3E1D261C922843003CFB43 /* logo-color@2x.png */; };
+		1D3E1D291C922843003CFB43 /* logo-color@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D3E1D271C922843003CFB43 /* logo-color@3x.png */; };
+		1D3E1D2C1C922A88003CFB43 /* bip_white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D3E1D2A1C922A88003CFB43 /* bip_white@2x.png */; };
+		1D3E1D2D1C922A88003CFB43 /* bip_white@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D3E1D2B1C922A88003CFB43 /* bip_white@3x.png */; };
+		1D3E2C611C82429F009557DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3E2C601C82429F009557DA /* AppDelegate.swift */; };
+		1D3E2C681C82429F009557DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D3E2C671C82429F009557DA /* Assets.xcassets */; };
+		1D761F6A1C9190F100FB9748 /* GdanskNumerekUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D761F691C9190F100FB9748 /* GdanskNumerekUITests.swift */; };
+		1D761F721C91911B00FB9748 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D761F711C91911B00FB9748 /* SnapshotHelper.swift */; };
+		1D8A36381C82439800574C9B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8A36371C82439800574C9B /* MainViewController.swift */; };
+		1D8A363A1C8243BE00574C9B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8A36391C8243BE00574C9B /* MainView.swift */; };
+		1D8CDCD21C8CD24300D36072 /* QueueNameExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8CDCD11C8CD24300D36072 /* QueueNameExtractor.swift */; };
+		1D8CDCDA1C8CD2B200D36072 /* GdanskNumerekTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8CDCD91C8CD2B200D36072 /* GdanskNumerekTests.swift */; };
+		1D8CDCE21C8CD2CE00D36072 /* QueueNameExtractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8CDCE11C8CD2CE00D36072 /* QueueNameExtractorTests.swift */; };
+		1D8CDCE31C8CD38400D36072 /* QueueNameExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8CDCD11C8CD24300D36072 /* QueueNameExtractor.swift */; };
+		1D8CDCE51C8CE1CA00D36072 /* QueueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8CDCE41C8CE1CA00D36072 /* QueueButton.swift */; };
+		1D8CDCE81C8CE5C600D36072 /* ticket@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D8CDCE61C8CE5C600D36072 /* ticket@2x.png */; };
+		1D8CDCE91C8CE5C600D36072 /* ticket@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D8CDCE71C8CE5C600D36072 /* ticket@3x.png */; };
+		1D8CDCEB1C8DE4C300D36072 /* QueuesViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8CDCEA1C8DE4C300D36072 /* QueuesViewLayout.swift */; };
+		1D8CDCED1C8DE85F00D36072 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8CDCEC1C8DE85F00D36072 /* UIViewControllerExtension.swift */; };
+		1D8CDCEF1C8DEA8200D36072 /* SingleQueueViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8CDCEE1C8DEA8200D36072 /* SingleQueueViewLayout.swift */; };
+		1D8CDCF11C8E0D9800D36072 /* TitledValueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8CDCF01C8E0D9800D36072 /* TitledValueView.swift */; };
+		1D8CDCF81C8EFD9C00D36072 /* SimpleAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8CDCF71C8EFD9C00D36072 /* SimpleAlert.swift */; };
+		1D8CDCFA1C8F011E00D36072 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8CDCF91C8F011E00D36072 /* Reachability.swift */; };
+		1DA813081C884B51006B05E1 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA813071C884B51006B05E1 /* Queue.swift */; };
+		1DA8130A1C885020006B05E1 /* numbers.xml in Resources */ = {isa = PBXBuildFile; fileRef = 1DA813091C885020006B05E1 /* numbers.xml */; };
+		1DA8130F1C8859C1006B05E1 /* ButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA8130E1C8859C1006B05E1 /* ButtonStyles.swift */; };
+		1DA813111C8868D7006B05E1 /* DivisionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA813101C8868D7006B05E1 /* DivisionButton.swift */; };
+		1DA813131C8869EC006B05E1 /* NumbersDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA813121C8869EC006B05E1 /* NumbersDataSource.swift */; };
+		1DA813161C886A7D006B05E1 /* ZOMDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA813151C886A7D006B05E1 /* ZOMDataSource.swift */; };
+		1DA813181C887561006B05E1 /* QueuesDataSourceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA813171C887561006B05E1 /* QueuesDataSourceProvider.swift */; };
+		1DA8132E1C88ACFA006B05E1 /* QueuesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA8132B1C88ACFA006B05E1 /* QueuesView.swift */; };
+		1DA8132F1C88ACFA006B05E1 /* QueuesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA8132C1C88ACFA006B05E1 /* QueuesViewController.swift */; };
+		1DBE2E241C8C751D000027C5 /* MainViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBE2E231C8C751D000027C5 /* MainViewLayout.swift */; };
+		1DBE2E261C8C7E2B000027C5 /* LabelStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBE2E251C8C7E2B000027C5 /* LabelStyles.swift */; };
+		1DBE2E281C8C7F59000027C5 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBE2E271C8C7F59000027C5 /* UIViewExtension.swift */; };
+		1DBE2E2A1C8C815B000027C5 /* NSMutableAttributedStringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBE2E291C8C815B000027C5 /* NSMutableAttributedStringExtension.swift */; };
+		1DBE2E2C1C8C8377000027C5 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBE2E2B1C8C8377000027C5 /* Button.swift */; };
+		1DCD0A881C88AD2700C4262D /* SingleQueueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCD0A871C88AD2700C4262D /* SingleQueueViewController.swift */; };
+		1DCD0A8A1C88AD4100C4262D /* SingleQueueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCD0A891C88AD4100C4262D /* SingleQueueView.swift */; };
+		1DCD0A931C8B248200C4262D /* bip@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DCD0A8F1C8B248200C4262D /* bip@3x.png */; };
+		1DCD0A941C8B248200C4262D /* gdansk@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DCD0A901C8B248200C4262D /* gdansk@2x.png */; };
+		1DCD0A951C8B248200C4262D /* gdansk@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DCD0A911C8B248200C4262D /* gdansk@3x.png */; };
+		1DCD0A971C8B2AA500C4262D /* bip@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DCD0A961C8B2AA500C4262D /* bip@2x.png */; };
+		FADB35866FDFF766BF45A794 /* Pods_GdanskNumerek.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18CAE2CFB22B1C59B17091DC /* Pods_GdanskNumerek.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1D761F6C1C9190F100FB9748 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D3E2C551C82429E009557DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1D3E2C5C1C82429F009557DA;
+			remoteInfo = GdanskNumerek;
+		};
+		1D8CDCDC1C8CD2B200D36072 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D3E2C551C82429E009557DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1D3E2C5C1C82429F009557DA;
+			remoteInfo = GdanskNumerek;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18CAE2CFB22B1C59B17091DC /* Pods_GdanskNumerek.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GdanskNumerek.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D1997B61C960D1900CC9CAA /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		1D218B421C84EA8A0026AB3C /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		1D218B441C84F4E10026AB3C /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		1D218B461C84F53E0026AB3C /* UIFontExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
+		1D379D621C90D91C002C3E22 /* RefreshButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshButton.swift; sourceTree = "<group>"; };
+		1D3E1D261C922843003CFB43 /* logo-color@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-color@2x.png"; sourceTree = "<group>"; };
+		1D3E1D271C922843003CFB43 /* logo-color@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-color@3x.png"; sourceTree = "<group>"; };
+		1D3E1D2A1C922A88003CFB43 /* bip_white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bip_white@2x.png"; sourceTree = "<group>"; };
+		1D3E1D2B1C922A88003CFB43 /* bip_white@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bip_white@3x.png"; sourceTree = "<group>"; };
+		1D3E2C5D1C82429F009557DA /* GdanskNumerek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GdanskNumerek.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D3E2C601C82429F009557DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1D3E2C671C82429F009557DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1D3E2C6C1C82429F009557DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D761F671C9190F100FB9748 /* GdanskNumerekUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GdanskNumerekUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D761F691C9190F100FB9748 /* GdanskNumerekUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GdanskNumerekUITests.swift; sourceTree = "<group>"; };
+		1D761F6B1C9190F100FB9748 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D761F711C91911B00FB9748 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
+		1D8A36371C82439800574C9B /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = GdanskNumerek/MainViewController.swift; sourceTree = SOURCE_ROOT; };
+		1D8A36391C8243BE00574C9B /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainView.swift; path = ../MainView.swift; sourceTree = "<group>"; };
+		1D8CDCD11C8CD24300D36072 /* QueueNameExtractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueueNameExtractor.swift; sourceTree = "<group>"; };
+		1D8CDCD71C8CD2B200D36072 /* GdanskNumerekTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GdanskNumerekTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D8CDCD91C8CD2B200D36072 /* GdanskNumerekTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GdanskNumerekTests.swift; sourceTree = "<group>"; };
+		1D8CDCDB1C8CD2B200D36072 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D8CDCE11C8CD2CE00D36072 /* QueueNameExtractorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueueNameExtractorTests.swift; sourceTree = "<group>"; };
+		1D8CDCE41C8CE1CA00D36072 /* QueueButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueueButton.swift; sourceTree = "<group>"; };
+		1D8CDCE61C8CE5C600D36072 /* ticket@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ticket@2x.png"; sourceTree = "<group>"; };
+		1D8CDCE71C8CE5C600D36072 /* ticket@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ticket@3x.png"; sourceTree = "<group>"; };
+		1D8CDCEA1C8DE4C300D36072 /* QueuesViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueuesViewLayout.swift; sourceTree = "<group>"; };
+		1D8CDCEC1C8DE85F00D36072 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		1D8CDCEE1C8DEA8200D36072 /* SingleQueueViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleQueueViewLayout.swift; sourceTree = "<group>"; };
+		1D8CDCF01C8E0D9800D36072 /* TitledValueView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitledValueView.swift; sourceTree = "<group>"; };
+		1D8CDCF71C8EFD9C00D36072 /* SimpleAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleAlert.swift; sourceTree = "<group>"; };
+		1D8CDCF91C8F011E00D36072 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		1DA813071C884B51006B05E1 /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		1DA813091C885020006B05E1 /* numbers.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = numbers.xml; sourceTree = "<group>"; };
+		1DA8130E1C8859C1006B05E1 /* ButtonStyles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonStyles.swift; sourceTree = "<group>"; };
+		1DA813101C8868D7006B05E1 /* DivisionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DivisionButton.swift; sourceTree = "<group>"; };
+		1DA813121C8869EC006B05E1 /* NumbersDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumbersDataSource.swift; sourceTree = "<group>"; };
+		1DA813151C886A7D006B05E1 /* ZOMDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZOMDataSource.swift; sourceTree = "<group>"; };
+		1DA813171C887561006B05E1 /* QueuesDataSourceProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueuesDataSourceProvider.swift; sourceTree = "<group>"; };
+		1DA8132B1C88ACFA006B05E1 /* QueuesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueuesView.swift; sourceTree = "<group>"; };
+		1DA8132C1C88ACFA006B05E1 /* QueuesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueuesViewController.swift; sourceTree = "<group>"; };
+		1DBE2E231C8C751D000027C5 /* MainViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewLayout.swift; sourceTree = "<group>"; };
+		1DBE2E251C8C7E2B000027C5 /* LabelStyles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelStyles.swift; sourceTree = "<group>"; };
+		1DBE2E271C8C7F59000027C5 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		1DBE2E291C8C815B000027C5 /* NSMutableAttributedStringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSMutableAttributedStringExtension.swift; sourceTree = "<group>"; };
+		1DBE2E2B1C8C8377000027C5 /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		1DCD0A871C88AD2700C4262D /* SingleQueueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleQueueViewController.swift; sourceTree = "<group>"; };
+		1DCD0A891C88AD4100C4262D /* SingleQueueView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleQueueView.swift; sourceTree = "<group>"; };
+		1DCD0A8F1C8B248200C4262D /* bip@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bip@3x.png"; sourceTree = "<group>"; };
+		1DCD0A901C8B248200C4262D /* gdansk@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gdansk@2x.png"; sourceTree = "<group>"; };
+		1DCD0A911C8B248200C4262D /* gdansk@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gdansk@3x.png"; sourceTree = "<group>"; };
+		1DCD0A961C8B2AA500C4262D /* bip@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bip@2x.png"; sourceTree = "<group>"; };
+		5584DF37922B1F3E14E05537 /* Pods-GdanskNumerek.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GdanskNumerek.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GdanskNumerek/Pods-GdanskNumerek.debug.xcconfig"; sourceTree = "<group>"; };
+		623E27F21272E26451F4C46C /* Pods-GdanskNumerek.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GdanskNumerek.release.xcconfig"; path = "Pods/Target Support Files/Pods-GdanskNumerek/Pods-GdanskNumerek.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D3E2C5A1C82429F009557DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FADB35866FDFF766BF45A794 /* Pods_GdanskNumerek.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D761F641C9190F100FB9748 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D8CDCD41C8CD2B200D36072 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D218B3D1C84EA250026AB3C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1DA813141C886A64006B05E1 /* QueuesDataSources */,
+				1D218B421C84EA8A0026AB3C /* ApiClient.swift */,
+				1D8CDCF01C8E0D9800D36072 /* TitledValueView.swift */,
+				1D8CDCF71C8EFD9C00D36072 /* SimpleAlert.swift */,
+				1DBE2E271C8C7F59000027C5 /* UIViewExtension.swift */,
+				1D8CDCEC1C8DE85F00D36072 /* UIViewControllerExtension.swift */,
+				1DBE2E251C8C7E2B000027C5 /* LabelStyles.swift */,
+				1DA813171C887561006B05E1 /* QueuesDataSourceProvider.swift */,
+				1DA8130E1C8859C1006B05E1 /* ButtonStyles.swift */,
+				1DBE2E2B1C8C8377000027C5 /* Button.swift */,
+				1DBE2E291C8C815B000027C5 /* NSMutableAttributedStringExtension.swift */,
+				1DA813101C8868D7006B05E1 /* DivisionButton.swift */,
+				1D218B461C84F53E0026AB3C /* UIFontExtension.swift */,
+				1D8CDCE41C8CE1CA00D36072 /* QueueButton.swift */,
+				1D379D621C90D91C002C3E22 /* RefreshButton.swift */,
+				1D8CDCF91C8F011E00D36072 /* Reachability.swift */,
+				1D218B441C84F4E10026AB3C /* UIColorExtension.swift */,
+				1DA813121C8869EC006B05E1 /* NumbersDataSource.swift */,
+				1D8CDCD11C8CD24300D36072 /* QueueNameExtractor.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		1D218B3E1C84EA3B0026AB3C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1DA813071C884B51006B05E1 /* Queue.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1D218B3F1C84EA540026AB3C /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1D8A36371C82439800574C9B /* MainViewController.swift */,
+				1D8A36391C8243BE00574C9B /* MainView.swift */,
+				1DBE2E231C8C751D000027C5 /* MainViewLayout.swift */,
+			);
+			path = MainViewController;
+			sourceTree = "<group>";
+		};
+		1D3E2C541C82429E009557DA = {
+			isa = PBXGroup;
+			children = (
+				1D1997B61C960D1900CC9CAA /* Settings.bundle */,
+				1D3E2C5F1C82429F009557DA /* GdanskNumerek */,
+				1D8CDCD81C8CD2B200D36072 /* GdanskNumerekTests */,
+				1D761F681C9190F100FB9748 /* GdanskNumerekUITests */,
+				1D3E2C5E1C82429F009557DA /* Products */,
+				F72013C1BEE2F8B856AEF9FA /* Pods */,
+				3E8F4E6D00B1156C6F921230 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1D3E2C5E1C82429F009557DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D3E2C5D1C82429F009557DA /* GdanskNumerek.app */,
+				1D8CDCD71C8CD2B200D36072 /* GdanskNumerekTests.xctest */,
+				1D761F671C9190F100FB9748 /* GdanskNumerekUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1D3E2C5F1C82429F009557DA /* GdanskNumerek */ = {
+			isa = PBXGroup;
+			children = (
+				1DCD0A8D1C8B248200C4262D /* images */,
+				1DA813291C88ACFA006B05E1 /* QueuesViewController */,
+				1DA813221C88ACB0006B05E1 /* SingleQueueViewController */,
+				1D218B3F1C84EA540026AB3C /* MainViewController */,
+				1D218B3E1C84EA3B0026AB3C /* Models */,
+				1D218B3D1C84EA250026AB3C /* Utils */,
+				1D3E2C601C82429F009557DA /* AppDelegate.swift */,
+				1DA813091C885020006B05E1 /* numbers.xml */,
+				1D3E2C671C82429F009557DA /* Assets.xcassets */,
+				1D3E2C6C1C82429F009557DA /* Info.plist */,
+			);
+			path = GdanskNumerek;
+			sourceTree = "<group>";
+		};
+		1D761F681C9190F100FB9748 /* GdanskNumerekUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1D761F711C91911B00FB9748 /* SnapshotHelper.swift */,
+				1D761F691C9190F100FB9748 /* GdanskNumerekUITests.swift */,
+				1D761F6B1C9190F100FB9748 /* Info.plist */,
+			);
+			path = GdanskNumerekUITests;
+			sourceTree = "<group>";
+		};
+		1D8CDCD81C8CD2B200D36072 /* GdanskNumerekTests */ = {
+			isa = PBXGroup;
+			children = (
+				1D8CDCD91C8CD2B200D36072 /* GdanskNumerekTests.swift */,
+				1D8CDCDB1C8CD2B200D36072 /* Info.plist */,
+				1D8CDCE11C8CD2CE00D36072 /* QueueNameExtractorTests.swift */,
+			);
+			path = GdanskNumerekTests;
+			sourceTree = "<group>";
+		};
+		1DA813141C886A64006B05E1 /* QueuesDataSources */ = {
+			isa = PBXGroup;
+			children = (
+				1DA813151C886A7D006B05E1 /* ZOMDataSource.swift */,
+			);
+			name = QueuesDataSources;
+			path = NumbersDataSources;
+			sourceTree = "<group>";
+		};
+		1DA813221C88ACB0006B05E1 /* SingleQueueViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1DCD0A871C88AD2700C4262D /* SingleQueueViewController.swift */,
+				1D8CDCEE1C8DEA8200D36072 /* SingleQueueViewLayout.swift */,
+				1DCD0A891C88AD4100C4262D /* SingleQueueView.swift */,
+			);
+			path = SingleQueueViewController;
+			sourceTree = "<group>";
+		};
+		1DA813291C88ACFA006B05E1 /* QueuesViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1DA8132B1C88ACFA006B05E1 /* QueuesView.swift */,
+				1D8CDCEA1C8DE4C300D36072 /* QueuesViewLayout.swift */,
+				1DA8132C1C88ACFA006B05E1 /* QueuesViewController.swift */,
+			);
+			path = QueuesViewController;
+			sourceTree = "<group>";
+		};
+		1DCD0A8D1C8B248200C4262D /* images */ = {
+			isa = PBXGroup;
+			children = (
+				1D3E1D261C922843003CFB43 /* logo-color@2x.png */,
+				1D3E1D271C922843003CFB43 /* logo-color@3x.png */,
+				1D3E1D2A1C922A88003CFB43 /* bip_white@2x.png */,
+				1D3E1D2B1C922A88003CFB43 /* bip_white@3x.png */,
+				1D8CDCE61C8CE5C600D36072 /* ticket@2x.png */,
+				1D8CDCE71C8CE5C600D36072 /* ticket@3x.png */,
+				1DCD0A961C8B2AA500C4262D /* bip@2x.png */,
+				1DCD0A8F1C8B248200C4262D /* bip@3x.png */,
+				1DCD0A901C8B248200C4262D /* gdansk@2x.png */,
+				1DCD0A911C8B248200C4262D /* gdansk@3x.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		3E8F4E6D00B1156C6F921230 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18CAE2CFB22B1C59B17091DC /* Pods_GdanskNumerek.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F72013C1BEE2F8B856AEF9FA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5584DF37922B1F3E14E05537 /* Pods-GdanskNumerek.debug.xcconfig */,
+				623E27F21272E26451F4C46C /* Pods-GdanskNumerek.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D3E2C5C1C82429F009557DA /* GdanskNumerek */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D3E2C6F1C82429F009557DA /* Build configuration list for PBXNativeTarget "GdanskNumerek" */;
+			buildPhases = (
+				87AC6E7D3A518637AFE0E741 /* Check Pods Manifest.lock */,
+				1D3E2C591C82429F009557DA /* Sources */,
+				1D3E2C5A1C82429F009557DA /* Frameworks */,
+				1D3E2C5B1C82429F009557DA /* Resources */,
+				C81A537DD2ABF25E269042FF /* Embed Pods Frameworks */,
+				0B1D5C57F03D26150C8199B0 /* Copy Pods Resources */,
+				1DB905D01C9188AC0084762F /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GdanskNumerek;
+			productName = GdanskNumerek;
+			productReference = 1D3E2C5D1C82429F009557DA /* GdanskNumerek.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1D761F661C9190F100FB9748 /* GdanskNumerekUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D761F701C9190F100FB9748 /* Build configuration list for PBXNativeTarget "GdanskNumerekUITests" */;
+			buildPhases = (
+				1D761F631C9190F100FB9748 /* Sources */,
+				1D761F641C9190F100FB9748 /* Frameworks */,
+				1D761F651C9190F100FB9748 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1D761F6D1C9190F100FB9748 /* PBXTargetDependency */,
+			);
+			name = GdanskNumerekUITests;
+			productName = GdanskNumerekUITests;
+			productReference = 1D761F671C9190F100FB9748 /* GdanskNumerekUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		1D8CDCD61C8CD2B200D36072 /* GdanskNumerekTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D8CDCDE1C8CD2B200D36072 /* Build configuration list for PBXNativeTarget "GdanskNumerekTests" */;
+			buildPhases = (
+				1D8CDCD31C8CD2B200D36072 /* Sources */,
+				1D8CDCD41C8CD2B200D36072 /* Frameworks */,
+				1D8CDCD51C8CD2B200D36072 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1D8CDCDD1C8CD2B200D36072 /* PBXTargetDependency */,
+			);
+			name = GdanskNumerekTests;
+			productName = GdanskNumerekTests;
+			productReference = 1D8CDCD71C8CD2B200D36072 /* GdanskNumerekTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1D3E2C551C82429E009557DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Eliasz Sawicki";
+				TargetAttributes = {
+					1D3E2C5C1C82429F009557DA = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 6J82AT4DW3;
+					};
+					1D761F661C9190F100FB9748 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 1D3E2C5C1C82429F009557DA;
+					};
+					1D8CDCD61C8CD2B200D36072 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 1D3E2C5C1C82429F009557DA;
+					};
+				};
+			};
+			buildConfigurationList = 1D3E2C581C82429E009557DA /* Build configuration list for PBXProject "GdanskNumerek" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1D3E2C541C82429E009557DA;
+			productRefGroup = 1D3E2C5E1C82429F009557DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D3E2C5C1C82429F009557DA /* GdanskNumerek */,
+				1D8CDCD61C8CD2B200D36072 /* GdanskNumerekTests */,
+				1D761F661C9190F100FB9748 /* GdanskNumerekUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D3E2C5B1C82429F009557DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D8CDCE91C8CE5C600D36072 /* ticket@3x.png in Resources */,
+				1DCD0A941C8B248200C4262D /* gdansk@2x.png in Resources */,
+				1D8CDCE81C8CE5C600D36072 /* ticket@2x.png in Resources */,
+				1D3E2C681C82429F009557DA /* Assets.xcassets in Resources */,
+				1D3E1D291C922843003CFB43 /* logo-color@3x.png in Resources */,
+				1D3E1D2D1C922A88003CFB43 /* bip_white@3x.png in Resources */,
+				1DCD0A951C8B248200C4262D /* gdansk@3x.png in Resources */,
+				1DCD0A931C8B248200C4262D /* bip@3x.png in Resources */,
+				1D1997B71C960D1900CC9CAA /* Settings.bundle in Resources */,
+				1DA8130A1C885020006B05E1 /* numbers.xml in Resources */,
+				1DCD0A971C8B2AA500C4262D /* bip@2x.png in Resources */,
+				1D3E1D281C922843003CFB43 /* logo-color@2x.png in Resources */,
+				1D3E1D2C1C922A88003CFB43 /* bip_white@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D761F651C9190F100FB9748 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D8CDCD51C8CD2B200D36072 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B1D5C57F03D26150C8199B0 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GdanskNumerek/Pods-GdanskNumerek-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1DB905D01C9188AC0084762F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 7f641f59fe3706c6a255204dec6409c221e910b6 018eca0fa8f3d5c7d917a40d4a0446a315ab3aba8144c2965bd5a0c05384e13e";
+		};
+		87AC6E7D3A518637AFE0E741 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C81A537DD2ABF25E269042FF /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GdanskNumerek/Pods-GdanskNumerek-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D3E2C591C82429F009557DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D8CDCEF1C8DEA8200D36072 /* SingleQueueViewLayout.swift in Sources */,
+				1D8CDCD21C8CD24300D36072 /* QueueNameExtractor.swift in Sources */,
+				1DCD0A881C88AD2700C4262D /* SingleQueueViewController.swift in Sources */,
+				1D8CDCED1C8DE85F00D36072 /* UIViewControllerExtension.swift in Sources */,
+				1DA813181C887561006B05E1 /* QueuesDataSourceProvider.swift in Sources */,
+				1D218B431C84EA8A0026AB3C /* ApiClient.swift in Sources */,
+				1D3E2C611C82429F009557DA /* AppDelegate.swift in Sources */,
+				1D379D631C90D91C002C3E22 /* RefreshButton.swift in Sources */,
+				1D8CDCFA1C8F011E00D36072 /* Reachability.swift in Sources */,
+				1D8CDCF81C8EFD9C00D36072 /* SimpleAlert.swift in Sources */,
+				1DA813111C8868D7006B05E1 /* DivisionButton.swift in Sources */,
+				1DA813081C884B51006B05E1 /* Queue.swift in Sources */,
+				1DBE2E241C8C751D000027C5 /* MainViewLayout.swift in Sources */,
+				1D218B451C84F4E10026AB3C /* UIColorExtension.swift in Sources */,
+				1D8A363A1C8243BE00574C9B /* MainView.swift in Sources */,
+				1DBE2E281C8C7F59000027C5 /* UIViewExtension.swift in Sources */,
+				1DBE2E2A1C8C815B000027C5 /* NSMutableAttributedStringExtension.swift in Sources */,
+				1DA813161C886A7D006B05E1 /* ZOMDataSource.swift in Sources */,
+				1DA8130F1C8859C1006B05E1 /* ButtonStyles.swift in Sources */,
+				1DA813131C8869EC006B05E1 /* NumbersDataSource.swift in Sources */,
+				1DA8132F1C88ACFA006B05E1 /* QueuesViewController.swift in Sources */,
+				1DA8132E1C88ACFA006B05E1 /* QueuesView.swift in Sources */,
+				1DBE2E261C8C7E2B000027C5 /* LabelStyles.swift in Sources */,
+				1D8CDCEB1C8DE4C300D36072 /* QueuesViewLayout.swift in Sources */,
+				1D8A36381C82439800574C9B /* MainViewController.swift in Sources */,
+				1DCD0A8A1C88AD4100C4262D /* SingleQueueView.swift in Sources */,
+				1D8CDCE51C8CE1CA00D36072 /* QueueButton.swift in Sources */,
+				1D218B471C84F53E0026AB3C /* UIFontExtension.swift in Sources */,
+				1DBE2E2C1C8C8377000027C5 /* Button.swift in Sources */,
+				1D8CDCF11C8E0D9800D36072 /* TitledValueView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D761F631C9190F100FB9748 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D761F6A1C9190F100FB9748 /* GdanskNumerekUITests.swift in Sources */,
+				1D761F721C91911B00FB9748 /* SnapshotHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D8CDCD31C8CD2B200D36072 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D8CDCE21C8CD2CE00D36072 /* QueueNameExtractorTests.swift in Sources */,
+				1D8CDCE31C8CD38400D36072 /* QueueNameExtractor.swift in Sources */,
+				1D8CDCDA1C8CD2B200D36072 /* GdanskNumerekTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1D761F6D1C9190F100FB9748 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1D3E2C5C1C82429F009557DA /* GdanskNumerek */;
+			targetProxy = 1D761F6C1C9190F100FB9748 /* PBXContainerItemProxy */;
+		};
+		1D8CDCDD1C8CD2B200D36072 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1D3E2C5C1C82429F009557DA /* GdanskNumerek */;
+			targetProxy = 1D8CDCDC1C8CD2B200D36072 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1D3E2C6D1C82429F009557DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1D3E2C6E1C82429F009557DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1D3E2C701C82429F009557DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5584DF37922B1F3E14E05537 /* Pods-GdanskNumerek.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = GdanskNumerek/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sawpro.GdanskNumerek;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1D3E2C711C82429F009557DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 623E27F21272E26451F4C46C /* Pods-GdanskNumerek.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = GdanskNumerek/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sawpro.GdanskNumerek;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1D761F6E1C9190F100FB9748 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GdanskNumerekUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sawpro.GdanskNumerekUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GdanskNumerek;
+			};
+			name = Debug;
+		};
+		1D761F6F1C9190F100FB9748 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GdanskNumerekUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sawpro.GdanskNumerekUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GdanskNumerek;
+			};
+			name = Release;
+		};
+		1D8CDCDF1C8CD2B200D36072 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GdanskNumerekTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sawpro.GdanskNumerekTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GdanskNumerek.app/GdanskNumerek";
+			};
+			name = Debug;
+		};
+		1D8CDCE01C8CD2B200D36072 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GdanskNumerekTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sawpro.GdanskNumerekTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GdanskNumerek.app/GdanskNumerek";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D3E2C581C82429E009557DA /* Build configuration list for PBXProject "GdanskNumerek" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D3E2C6D1C82429F009557DA /* Debug */,
+				1D3E2C6E1C82429F009557DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D3E2C6F1C82429F009557DA /* Build configuration list for PBXNativeTarget "GdanskNumerek" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D3E2C701C82429F009557DA /* Debug */,
+				1D3E2C711C82429F009557DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D761F701C9190F100FB9748 /* Build configuration list for PBXNativeTarget "GdanskNumerekUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D761F6E1C9190F100FB9748 /* Debug */,
+				1D761F6F1C9190F100FB9748 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D8CDCDE1C8CD2B200D36072 /* Build configuration list for PBXNativeTarget "GdanskNumerekTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D8CDCDF1C8CD2B200D36072 /* Debug */,
+				1D8CDCE01C8CD2B200D36072 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1D3E2C551C82429E009557DA /* Project object */;
+}
