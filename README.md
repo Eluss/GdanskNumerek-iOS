@@ -1,3 +1,3 @@
-GdanskNumerek - Android
+GdanskNumerek - iOS
 
-Android app which presents current state of Gdansk's city halls' queues
+iOS app which presents current state of Gdansk's city halls' queues
