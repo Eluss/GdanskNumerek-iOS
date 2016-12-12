@@ -11,10 +11,10 @@ import Alamofire
 import SWXMLHash
 
 enum Endpoint: String {
-    case EndpointZOM1 = "http://www.gdansk.pl/urzad/download/dane-otwarty-gdansk/qmatic-zom0.xml"
-    case EndpointZOM2 = "http://www.gdansk.pl/urzad/download/dane-otwarty-gdansk/qmatic-zom1.xml"
-    case EndpointZOM3 = "http://www.gdansk.pl/urzad/download/dane-otwarty-gdansk/qmatic-zom2.xml"
-    case EndpointZOM4 = "http://www.gdansk.pl/urzad/download/dane-otwarty-gdansk/qmatic-zom3.xml"
+    case EndpointZOM1 = "http://www.gdansk.pl/files/xml/qmatic-zom0.xml"
+    case EndpointZOM2 = "http://www.gdansk.pl/files/xml/qmatic-zom1.xml"
+    case EndpointZOM3 = "http://www.gdansk.pl/files/xml/qmatic-zom2.xml"
+    case EndpointZOM4 = "http://www.gdansk.pl/files/xml/qmatic-zom3.xml"
 }
 
 class ApiClient: NSObject {
